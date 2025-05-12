@@ -1,103 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поступивспо.новосиб</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  
-    <link rel="stylesheet" href="../static/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поступивспо.новосиб</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../static/style.css">
 </head>
-  <body>
-    <header class="p-3 mb-3 border-bottom">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-            </a>
-    
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 link-secondary">Обзор</a></li>
-              <li><a href="#" class="nav-link px-2 link-body-emphasis">Настройки</a></li>
-              <li><a href="#" class="nav-link px-2 link-body-emphasis"></a></li>
-              <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
-            </ul>
-    
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="поиск" class="form-control" placeholder="Поиск..." aria-label="Поиск">
-            </form>
-    
-            <div class="dropdown text-end">
-              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
-              </a>
-              <ul class="dropdown-menu text-small">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-              </ul>
-            </div>
-          </div>
+
+<body>
+  <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Обзор</a></li>
+          <li><a href="#" class="nav-link px-2 link-body-emphasis">Настройки</a></li>
+          <li><a href="#" class="nav-link px-2 link-body-emphasis"></a></li>
+          <li><a href="#" class="nav-link px-2 link-body-emphasis">Вузы</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="поиск" class="form-control" placeholder="Поиск..." aria-label="Поиск">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="#">Интересы</a></li>
+            <li><a class="dropdown-item" href="#">Настройки</a></li>
+            <li><a class="dropdown-item" href="#">Профиль</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Выход</a></li>
+          </ul>
         </div>
-        
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+
+
+      <div id="carouselExampleDark" class="carousel slide w-50">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="https://avatars.dzeninfra.ru/get-zen_doc/4697586/pub_60e408c0f71c65151d4bff87_60e4091545d24303ecdce4fc/scale_1200" class="d-block w-100" alt="...">
+            <img height="500" src="https://img.tourister.ru/files/1/1/1/8/9/7/2/0/original.jpg" class="d-block w-100"
+              alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5>Московский техникум космического приборостроения (МТКП) МГТУ им. Н.Э. Баумана</h5>
+              <p>государственное учебное заведение
+                среднего специального образования, проводившее подготовку по специальностям компьютерного и
+                радиоаппаратостроительного профилей.
+                Московский техникум космического приборостроения — это, единственный в России техникум, ведущий
+                подготовку по всему спектру специальностей,
+                связанных с автоматическими системами управления летательных аппаратов, вычислительной техникой и её
+                программным обеспечением.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="https://avatars.dzeninfra.ru/get-zen_doc/4697586/pub_60e408c0f71c65151d4bff87_60e4091545d24303ecdce4fc/scale_1200" class="d-block w-100" alt="...">
+            <img height="500"
+              src="https://avatars.mds.yandex.net/get-altay/1938323/2a0000017bbf828f958d4f95e1220f828bea/XXXL"
+              class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5>Колледж при Университете «Синергия»</h5>
+              <p>Колледж «Синергии» обеспечивает качественную довузовскую подготовку. Сюда поступают как для базового
+                освоения профессии,
+                так и перед получением высшего образования.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://avatars.dzeninfra.ru/get-zen_doc/4697586/pub_60e408c0f71c65151d4bff87_60e4091545d24303ecdce4fc/scale_1200" class="d-block w-100" alt="...">
+            <img height="500" src="https://upload.wikimedia.org/wikipedia/commons/6/66/MTUSI.jpg" class="d-block w-100"
+              alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-            <img src="https://avatars.dzeninfra.ru/get-zen_doc/4697586/pub_60e408c0f71c65151d4bff87_60e4091545d24303ecdce4fc/scale_1200" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the fourth slide.</p>
+              <h5>Колледж телекоммуникаций Московского технического университета связи и информатики (МТУСИ). </h5>
+              <p>Колледж телекоммуникаций МТУСИ является структурной единицей Московского технического университета связи и информатики.
+                 КТ МТУСИ является федеральным колледжем и более 100 лет готовит специалистов в области программирования, информационной безопасности
+                  и инновационных технологий проводных и беспроводных систем связи. Выпускники колледжа востребованы в ведущих компаниях Москвы и 
+                  регионов России в отрасли инфокоммуникационных технологий и IT.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="https://avatars.dzeninfra.ru/get-zen_doc/4697586/pub_60e408c0f71c65151d4bff87_60e4091545d24303ecdce4fc/scale_1200" class="d-block w-100" alt="...">
+            <img height="500"
+              src="https://avatars.mds.yandex.net/get-altay/859900/2a0000015e614f90e0d366059f6b72ef3e7e/XXXL"
+              class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h5>Санкт-Петербургский колледж телекоммуникаций им. Бонч-Бруевича</h5>
+              <p> известный и инновационный вуз России в сфере связи и телекоммуникаций, при котором основан колледж телекоммуникаций
+                 Санкт-Петербурга. Вуз и колледж готовят высококлассных специалистов в области телекоммуникаций, владеющих фундаментальными
+                  знаниями и прикладными методами, способных решать научно-технические задачи и принимать решения. Колледж – активный участник 
+                  сетевой академии Cisco, награжден за вклад в подготовку специалистов и является лауреатом конкурса «100 лучших ссузов России»..</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img height="500" src="https://sib.fm/storage/article/February2023/QJ9nPyz0L7zi0l9vNStb.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fifth slide label</h5>
               <p>Some representative placeholder content for the fifth slide.</p>
             </div>
           </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
