@@ -11,4 +11,5 @@ def index():
 def spo():
     return render_template('spo.html')
 
+
 app.run(debug=True)
