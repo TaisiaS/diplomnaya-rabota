@@ -18,3 +18,22 @@ def get_spo():
 
     return College
 get_spo()
+
+def get_uni():
+
+    conn = sqlite3.connect('BDproject.db')
+
+    cursor = conn.cursor()
+
+    sql = "SELECT * FROM University"
+
+    cursor.execute(sql)
+
+    University = cursor.fetchall()
+ 
+    print(University[0])
+
+    conn.close()
+
+    return University
+get_uni()
