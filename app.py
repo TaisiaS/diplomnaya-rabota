@@ -27,4 +27,14 @@ def uni():
         uni_list = uni_list, 
     )
 
+@app.route('/formspo')
+def formspo():
+    return render_template('formspo.html')
+
+
+@app.route('/formuni')
+def formuni():
+    return render_template('formuni.html')
+
+
 app.run(debug=True)
