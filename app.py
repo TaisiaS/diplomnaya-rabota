@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from database import get_spo, get_uni
 app = Flask(__name__)
 
@@ -20,7 +20,7 @@ def spo():
 
 @app.route('/uni')
 def uni():
-    uni_list = get_uni()
+    uni_list = get_uni(0)
     return render_template(
         'uni.html',
         title="ВУЗ",
@@ -36,5 +36,30 @@ def formspo():
 def formuni():
     return render_template('formuni.html')
 
+
+@app.route('/serchspo', methods=['GET', 'POST'])
+def search_spo():
+    if request.method == 'POST':
+        search_spo = float(request.form['search_spo'])
+        spo_list = get_spo(search_spo)
+        return render_template(
+            'spo.html',
+            title="СПО",
+            spo_list = spo_list,
+        )
+    return render_template('formspo.html', title='searchspo')
+
+
+@app.route('/serchuni', methods=['GET', 'POST'])
+def search_uni():
+    if request.method == 'POST':
+        search_uni = float(request.form['search_uni'])
+        uni_list = get_uni(search_uni)
+        return render_template(
+            'uni.html',
+            title="ВУЗ",
+            uni_list = uni_list, 
+        )
+    return render_template('formuni.html', title='searchuni')
 
 app.run(debug=True)

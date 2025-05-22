@@ -1,15 +1,14 @@
 import sqlite3 
 
-def get_spo():
+def get_spo(score):
 
     conn = sqlite3.connect('BDproject.db')
 
     cursor = conn.cursor()
 
-    sql = "SELECT * FROM College"
-
+    sql = f"SELECT * FROM College WHERE p_scores > {score};"
+    print(sql)
     cursor.execute(sql)
-
     College = cursor.fetchall()
  
     print(College[0])
@@ -17,16 +16,16 @@ def get_spo():
     conn.close()
 
     return College
-get_spo()
 
-def get_uni():
+
+def get_uni(score):
 
     conn = sqlite3.connect('BDproject.db')
 
     cursor = conn.cursor()
 
-    sql = "SELECT * FROM University"
-
+    sql = f"SELECT * FROM University WHERE p_scores > {score};"
+    print(sql)
     cursor.execute(sql)
 
     University = cursor.fetchall()
@@ -36,23 +35,3 @@ def get_uni():
     conn.close()
 
     return University
-get_uni()
-
-def get_uni():
-
-    conn = sqlite3.connect('BDproject.db')
-
-    cursor = conn.cursor()
-
-    sql = "SELECT * FROM University"
-
-    cursor.execute(sql)
-
-    University = cursor.fetchall()
- 
-    print(University[0])
-
-    conn.close()
-
-    return University
-get_uni()
