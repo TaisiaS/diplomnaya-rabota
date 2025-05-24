@@ -6,12 +6,10 @@ def get_spo(score):
 
     cursor = conn.cursor()
 
-    sql = f"SELECT * FROM College WHERE p_scores > {score};"
+    sql = f"SELECT * FROM College WHERE p_scores < {score};"
     print(sql)
     cursor.execute(sql)
     College = cursor.fetchall()
- 
-    print(College[0])
 
     conn.close()
 
@@ -24,13 +22,12 @@ def get_uni(score):
 
     cursor = conn.cursor()
 
-    sql = f"SELECT * FROM University WHERE p_scores > {score};"
+    sql = f"SELECT * FROM University WHERE p_scores < {score};"
     print(sql)
     cursor.execute(sql)
 
     University = cursor.fetchall()
- 
-    print(University[0])
+
 
     conn.close()
 

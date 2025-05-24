@@ -11,7 +11,7 @@ def index():
 @app.route('/spo')
 def spo():
 
-    spo_list = get_spo()
+    spo_list = get_spo(1000)
     return render_template(
         'spo.html',
         title="СПО",
@@ -20,7 +20,7 @@ def spo():
 
 @app.route('/uni')
 def uni():
-    uni_list = get_uni(0)
+    uni_list = get_uni(1000)
     return render_template(
         'uni.html',
         title="ВУЗ",

@@ -8,3 +8,80 @@ h1 {
      
     filter: brightness(0.7) blur(2px);
 }
+body {
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", sans-serif;
+  color: #222222;
+
+  background: #ffffff url("img/bg-page.png") no-repeat top center;
+}
+
+.spo {
+    background-image: url(https://elearn.urfu.ru/pluginfile.php/830677/course/overviewfiles/1685480303_polinka-top-p-universitet-kartinki-dlya-prezentatsii-kra-1.jpg);
+    width: 700px;
+    height: 400px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+    position: relative;
+}
+
+.uni{
+    background-image: url(https://static14.tgcnt.ru/posts/_0/7e/7e502b6c9988904a06aca7d703e49919.jpg);
+    width: 700px;
+    height: 400px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+figcaption{
+    z-index: 1;
+    opacity: 0;
+}
+
+.filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0px);
+    transition-duration: 0.3s;
+}
+
+.figure:hover .filter{
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.figure:hover figcaption{
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
